@@ -1,0 +1,159 @@
+@import "fonts.css";
+@import "media.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+}
+
+header {
+    width: 100%;
+    background-color: black;
+}
+
+header .head {
+    max-width: 1170px;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .head img {
+    width: 100px;
+}
+
+header .navbar .nav-item {
+    display: inline-block;
+    line-height: 100px;
+    padding: 0 20px;
+}
+
+header .navbar .nav-item:last-of-type {
+    padding-right: 15px;
+}
+
+header .navbar .nav-link {
+    text-decoration: none;
+    color: #a40401;
+    font-family: "Quicksand";
+    font-size: 20px;
+}
+
+header ul li:hover a {
+    border-bottom: solid 4px #a40401;
+}
+
+.breadcrumbs {
+    display: inline-block;
+    margin: 15px 0;
+    counter-reset: flag;
+    color: black;
+    box-shadow: 0 0 2px #aaa;
+}
+
+.breadcrumbs a {
+    position: relative;
+    float: left;
+    padding-left: 60px;
+    padding-right: 10px;
+    text-decoration: none;
+    line-height: 36px;
+    color: black;
+    background: white;
+    transition: all 0.5s;
+}
+
+.breadcrumbs a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -18px;
+    z-index: 1;
+    width: 36px;
+    height: 36px;
+    background: white;
+    box-shadow: 1px 1px 0 1px #ddd;
+    border-radius: 50px 0 0 0;
+    transform: rotate(-45deg) scale(0.73);
+    transition: all 0.5s;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:hover::after,
+.breadcrumbs a.active,
+.breadcrumbs a.active::after {
+    background: #a40401;
+}
+
+.main {
+    max-width: 1170px;
+    margin: auto;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.main img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.main h2 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.main ol {
+    padding-left: 25px;
+}
+
+.main ol li {
+    font-size: 25px;
+    margin: 0 15px 15px;
+}
+
+.main ul li {
+    font-size: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 15px;
+
+}
+
+footer {
+    background-color: black;
+}
+
+footer .lower {
+    max-width: 1170px;
+    margin: auto;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .lower img {
+    width: 150px;
+}
+
+footer .info {
+    display: flex;
+}
+
+footer .info ul {
+    padding: 0 20px;
+    line-height: 25px;
+    margin-top: 25px;
+}
+
+footer .info ul {
+    list-style: none;
+}
+
+footer .info a {
+    text-decoration: none;
+    color: #a40401;
+    font-family: "Quicksand";
+    font-size: 15px;
+}
