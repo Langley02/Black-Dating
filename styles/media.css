@@ -1,18 +1,29 @@
-@media (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
     .container {
         max-width: 970px;
     }
 }
-@media (max-width: 992px) {
+
+@media screen and (max-width: 768px) {
     .container {
         max-width: 750px;
     }
+    .navbar {
+        display: none;
+    }
+    .head .burger{
+        display: block;
+    }
+
 }
-@media (max-width: 767px) {
+
+@media screen and (max-width: 414px) {
     .container {
         max-width: none;
     }
-    .lower img{
+
+    .lower img {
         display: none;
     }
+
 }
